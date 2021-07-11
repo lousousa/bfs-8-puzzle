@@ -1,0 +1,76 @@
+body{
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	font-family: 'Lucida Sans Unicode';
+	background-color: black;
+}
+#grid{
+	position: relative;
+	background-color: #222;
+	margin: 64px auto;
+	border-radius: 2px;
+}
+#grid .cell{
+	width: 64px;
+	height: 64px;
+	line-height: 64px;
+	font-size: 28px;
+	border-radius: 2px;
+	border: 1px solid #222;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#555,#444);
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	text-shadow: 0px 0px 3px #aaa;
+	box-sizing: border-box;
+	transition: top .1s, left .1s;
+}
+#grid .cell:hover{
+	background: linear-gradient(#444,#444);	
+}
+#panel{
+	text-align: center;
+	margin: 20px auto;
+	display: inline-block;
+	width: 100%;
+}
+#panel .movement-txt{
+	color: #888;
+	font-size: 32px;
+	text-shadow: 0px 0px 3px #aaa;
+	opacity: 0;
+	display: none;
+}
+#panel .movement-txt b{
+	display: inline-block;
+	vertical-align: middle;
+}
+#panel .movement-txt i{
+	font-size: 22px;
+	display: inline-block;
+	padding-left: 16px;
+	vertical-align: middle;
+}
+#panel .loading-img{
+	display: none;
+}
+#panel .btn-1{
+	background-color: #444;
+	color: white;
+	box-sizing: border-box;
+	padding: 6px 10px;
+	text-decoration: none;
+	font-size: 14px;
+	margin: 8px;
+	display: inline-block;
+	border-radius: 4px;
+	line-height: 32px;
+	min-width: 100px;
+}
+#panel .btn-1:hover{
+	background-color: #222;	
+}
